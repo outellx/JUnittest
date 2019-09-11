@@ -302,7 +302,7 @@ public class UserSystemTest {
     }
     @Test
     public void name60() {
-        boolean result = true;
+        boolean result = false;
         assertTrue(result);
     }
 }
