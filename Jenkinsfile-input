@@ -38,7 +38,7 @@ pipeline {
                 parameters: [string(defaultValue: 'master',
                   description: 'The branch name of git repo', name: 'branchName', trim: true)]
 
-              git branch: result, url: 'https://github.com/devops-workspace/demo-junit'
+              echo result
             }
           }
         }
@@ -52,7 +52,6 @@ pipeline {
                   string(defaultValue: 'debug info',
                   description: 'Output the debug info', name: 'debugInfo', trim: true)]
 
-              git branch: result.branchName, url: 'https://github.com/devops-workspace/demo-junit'
               echo result.debugInfo
             }
           }
